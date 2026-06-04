@@ -181,11 +181,9 @@ erDiagram
 ## Participació (Total vs. Parcial)
 La participació indica si l'existència d'una instància d'una entitat depèn de la seva participació en una relació.
 
-> Participació Total: Tota instància de l'entitat ha de participar en la relació (representat clàssicament amb una doble línia).
+- Participació Total: Tota instància de l'entitat ha de participar en la relació (representat clàssicament amb una doble línia) (||).
 
-> Participació Parcial: No és obligatori que totes les instàncies hi participin (línia simple).
-
-> Mermaid no té una notació específica per a la participació total. S'indica conceptualment a través de la cardinalitat. Una cardinalitat de "un o molts" (}|) o "exactament un" (||) implica participació total.
+- Participació Parcial: No és obligatori que totes les instàncies hi participin (línia simple) (}|).
 
 > Exemple: En el nostre model, una Mascota requereix estar vinculada obligatòriament a un Personatge (||). Per tant, la participació de Mascota és total.
 
