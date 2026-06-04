@@ -196,12 +196,11 @@ erDiagram
 
 Entitats Febles
 
-Entitats Febles
-Una entitat feble és aquella l'existència de la qual depèn d'una altra entitat (anomenada entitat forta o propietària). No pot ser identificada unívocament només pels seus propis atributs; necessita la clau de l'entitat forta.
+Una entitat feble és aquella que depèn d'una entitat forta (o propietària) per existir. No té prou atributs propis per identificar-se de manera única i necessita la clau de l'entitat forta.
 
-> Representació: Mermaid no té una sintaxi de doble rectangle per a entitats febles. Es representen com una entitat normal, on la seva clau primària es forma o depèn lògicament de l'entitat forta.
+> Representació: Com que Mermaid no té un disseny de doble rectangle específic per a entitats febles, es dibuixen com una entitat normal, indicant que la seva clau primària depèn de l'entitat forta.
 
-> Exemple: Si considerem que una Mascota no pot existir sense el seu Personatge, i el seu identificador depengués del codi del personatge. En el nostre esquema real, es resol donant-li una clau pròpia com num-chip, però conceptualment manté una dependència d'existència molt forta amb l'entitat Personatge.
+> Exemple: Una Mascota que depèn d'un Personatge. Tot i que a la pràctica se li pot assignar una clau pròpia (com el num-chip), conceptualment la seva existència està totalment lligada al personatge.
 
 ```mermaid
 erDiagram
